@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body {
+            font-family: "Mitr", sans-serif;
+        }
+    }
+
+@layer components{
+    .menu-button{
+        @apply text-white hover:text-black hover:text-black hover:bg-rose-600 p-2 transition duration-700 ease-in-out;
+    }
+}
+
+
+@keyframes slow-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px); /* ลดค่าตรงนี้เพื่อให้เด้งต่ำลง */
+    }
+}
+
+.slow-bounce {
+    animation: slow-bounce 3s infinite ease-in-out; /* 2s = ทำให้เด้งช้าลง */
+}
+
