@@ -31,10 +31,9 @@ function showInfomationcol(){
     colinfo.classList.toggle("hidden");
 }
 
-const unibutton = document.getElementById("universtbutton");
-const uniinfo = document.getElementById("universeinfo");
-unibutton.addEventListener("click",showInfomationuni);
-function showInfomationuni(){
-    uniinfo.classList.toggle("visible");
-    uniinfo.classList.toggle("hidden");
+const membutton = document.getElementById("memberbutton");
+membutton.addEventListener("click",alertmember);
+membutton.addEventListener("click",testfunc);
+function alertmember(){
+    alert("ยังไม่ได้จัดทำ");
 }
