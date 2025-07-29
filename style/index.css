@@ -94,6 +94,10 @@ aside p {
     text-align: left;
     word-wrap: break-word;
 }
+.ref{
+    padding-right: 10px;
+    overflow-wrap: break-word;
+}
 .logodisplay{
     display: flex;
     justify-content: space-between;
