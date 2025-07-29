@@ -92,6 +92,7 @@ aside p {
     text-decoration-thickness: 1px;
     font-weight: bold;
     text-align: left;
+    word-wrap: break-word;
 }
 .logodisplay{
     display: flex;
