@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Mitr:wght@200;300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (min-width: 360px) and (max-width:480px){
+@media (min-width: 1px) and (max-width:480px){
 html{
     scroll-behavior: smooth;
 }
