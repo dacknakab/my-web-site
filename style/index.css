@@ -101,6 +101,7 @@ aside p {
 .logodisplay{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     box-sizing: border-box;
 }
 
@@ -119,8 +120,9 @@ main {
 }
 .nameprofile {
     font-size: 1.5rem;
-    padding-top: 3vh;
     padding-left: 10px;
+    justify-items: center;
+    text-wrap: wrap;
     background-color: rgb(231, 227, 227);
     width: 100%;
     box-sizing: border-box;
@@ -170,9 +172,24 @@ footer{
     height: 30px;
     background-color: #4c3c3c;
 }
-@media (min-width: 769px){
+}
+
+@media (min-width: 481px){
+html{
+    scroll-behavior: smooth;
+}
+
+a[href^="#"]:focus {
+  outline: none;
+}
+
+body{
+    background-color: #d8bdbd;
+    align-self: center;
+}
 nav {
     font-family: 'Mitr';
+    font-size: 1.5rem;
 }
 
 nav ul{
@@ -188,17 +205,137 @@ nav ul li{
 }
 nav ul li a{
     display:block;
-    padding: 14px 16px;
+    padding: 1.5rem 20px;
     color: white;
     text-decoration: none;
 }
-
+.nav-mbbtn{
+    display: none;
+}
 nav ul li.right{
     float: right;
 }
 
+
 li a:hover{
     background-color: darkcyan;
 }
+.content{
+    background-color: rgb(134, 69, 69);
+    width: 25%;
+    height: auto;
+    padding-bottom: 3%;
+    box-sizing: border-box;
+}
+
+.profilepicture {
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+.logo{
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+aside div{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 2rem;
+}
+aside p {
+    text-align: center;
+    color: white;
+}
+.head-aside{
+    padding-top: 10px;
+    padding-bottom: 2px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+    font-weight: bold;
+    text-align: left;
+    word-wrap: break-word;
+}
+.ref{
+    padding-right: 10px;
+    overflow-wrap: break-word;
+}
+.logodisplay{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Mitr';
+    width: 100%;
+    box-sizing: border-box;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.nameprofile {
+    font-size: 5rem;
+    padding-left: 10px;
+    justify-items: center;
+    text-wrap: wrap;
+    background-color: rgb(231, 227, 227);
+    width: 100%;
+    box-sizing: border-box;
+}
+.work-ex{
+    font-size: 3rem;
+    padding-left: 30px;
+    padding-top: 3vh;
+}
+hr{
+    box-sizing: border-box;
+    width: 95%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    box-shadow: 3px 2px;
+}
+
+.study-ex{
+    font-size: 3rem;
+    padding-left: 30px;
+    padding-top: 3vh;
+}
+.name-work{
+    font-size: 2rem;
+    padding-left: 5%;
+} 
+.info-work{
+    font-size: 1.5rem;
+    padding-left: 7%;
+}
+.special-skill{
+    font-size: 3rem;
+    padding-left: 30px;
+    padding-top: 3vh;
+}
+.info-special-skill{
+    font-size: 1.5rem;
+    padding-left: 7%;
+}
+footer{
+    width: 100%;
+    height: 72px;
+    background-color: #4c3c3c;
 }
 }
